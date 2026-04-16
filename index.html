@@ -65,6 +65,7 @@ body{
   transition: all 0.25s ease;
   color:#fff;
   will-change: transform, box-shadow;
+  box-sizing:border-box;
 }
 
 /* BOTÓN PRINCIPAL */
@@ -139,15 +140,17 @@ body{
   font-size:16px;
 }
 
-/* BOTONES LATERALES */
+/* BOTONES LATERALES (FIX SOLO AQUÍ) */
 .buttons{
   display:flex;
   justify-content:space-between;
   gap:15px;
+  flex-wrap:wrap;
 }
 
 .buttons a{
-  width:48%;
+  flex:1;
+  min-width:140px;
   text-align:center;
 }
 
@@ -209,16 +212,20 @@ body{
     flex-direction:column;
     text-align:center;
   }
+
   .header-text{
     text-align:center;
     margin-top:10px;
   }
+
   .content{
     padding:20px;
   }
+
   .buttons{
     flex-direction:column;
   }
+
   .buttons a{
     width:100%;
   }
@@ -324,13 +331,11 @@ Síguenos: nos.pucp.edu.pe
 
 <div class="footer-text">
 <a href="https://www.instagram.com/nospucp/" target="_blank" class="social-inline">
-Síguenos en:
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+Síguenos en <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
   <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
   <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
   <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
-</svg>
-@nospucp
+</svg> @nospucp
 </a>
 </div>
 
