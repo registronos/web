@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Eventos - PUCP</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#eef1f5;
+}
+
+.container{
+  max-width:600px;
+  margin:auto;
+  background:#fff;
+}
+
+/* HEADER */
+.header{
+  background:#1C1C1C;
+  color:#fff;
+  padding:30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.header img{
+  width:150px;
+}
+
+.header-text{
+  text-align:right;
+}
+
+/* BANNER */
+.banner{
+  background:#10A37F;
+  color:#fff;
+  padding:10px 30px;
+  font-size:13px;
+}
+
+/* CONTENT */
+.content{
+  padding:30px;
+  font-size:14px;
+  line-height:1.7;
+  color:#2b2b2b;
+}
+
+/* BOTONES PRO */
+.btn{
+  position: relative;
+  display:inline-block;
+  padding:14px 30px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  overflow:hidden;
+  transition: all 0.25s ease;
+  color:#fff;
+  will-change: transform, box-shadow;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-primary{
+  background: linear-gradient(135deg,#FF5F00,#ff7b2f);
+  box-shadow: 0 4px 15px rgba(255,95,0,0.4);
+}
+
+.btn-primary:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,95,0,0.6);
+}
+
+/* BOTONES OSCUROS */
+.btn-dark{
+  background:#0b2a4a;
+  box-shadow: 0 4px 15px rgba(11,42,74,0.4);
+}
+
+.btn-dark:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(11,42,74,0.6);
+}
+
+/* EFECTO BRILLO */
+.btn::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-75%;
+  width:50%;
+  height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent);
+  transform:skewX(-25deg);
+}
+
+.btn:hover::before{
+  left:120%;
+  transition:0.6s;
+}
+
+/* RIPPLE */
+.ripple{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(255,255,255,0.5);
+  transform:scale(0);
+  animation:ripple 0.6s linear;
+}
+
+@keyframes ripple{
+  to{
+    transform:scale(4);
+    opacity:0;
+  }
+}
+
+/* BLOQUES */
+.box{
+  background:#f8fafc;
+  border-left:4px solid #0b2a4a;
+  padding:15px;
+  margin:20px 0;
+}
+
+.alert{
+  background:#fff7ed;
+  border-left:4px solid #f4a024;
+  padding:15px;
+  margin:20px 0;
+  text-align:center;
+  font-size:16px;
+}
+
+/* BOTONES LATERALES */
+.buttons{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+}
+
+.buttons a{
+  width:48%;
+  text-align:center;
+}
+
+/* FOOTER */
+.footer{
+  background:#1C1C1C;
+  color:#fff;
+  text-align:center;
+  padding:25px;
+}
+
+.footer img{
+  width:160px;
+  opacity:0.9;
+  margin-bottom:10px;
+}
+
+.footer-text{
+  font-size:12px;
+  margin-top:5px;
+  opacity:0.9;
+}
+
+.footer-link{
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-link:hover{
+  color:#10A37F;
+}
+
+.social-inline{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.social-inline:hover{
+  color:#10A37F;
+}
+
+/* ICONO FINAL */
+.final-icons img{
+  transition:0.3s;
+}
+
+.final-icons img:hover{
+  transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .header{
+    flex-direction:column;
+    text-align:center;
+  }
+  .header-text{
+    text-align:center;
+    margin-top:10px;
+  }
+  .content{
+    padding:20px;
+  }
+  .buttons{
+    flex-direction:column;
+  }
+  .buttons a{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+  <a href="https://www.nos.pucp.edu.pe/" target="_blank">
+    <img src="https://lh3.googleusercontent.com/d/1iy0ZZ21HvcLxMpv7JNr95ncBekoLZWt_">
+  </a>
+
+  <div class="header-text">
+    <h2>Registro de Eventos</h2>
+    <p>Para participantes, staff, proveedores y catering</p>
+  </div>
+</div>
+
+<div class="banner">
+3 años siendo el espacio donde todo cobra vida.
+</div>
+
+<div class="content">
+
+<p><strong>Estimado/a organizador/a:</strong></p>
+
+<p>
+Nos encontramos próximos a la realización de su evento. Con el objetivo de garantizar un ingreso ágil, ordenado y alineado con los protocolos de seguridad, le solicitamos completar el registro correspondiente.
+</p>
+
+<div style="text-align:center;">
+<a href="https://pucp.kissflow.com/public/Process/Pf378e427c-a95f-47da-a12e-692388e8ecfe" target="_blank" class="btn btn-primary">
+Registrarse Ahora
+</a>
+</div>
+
+<div class="box">
+<strong>Instrucciones generales</strong><br><br>
+
+1. En Tipo de actividad, seleccionar: <strong>Eventos</strong>.<br><br>
+
+2. En Tipo de personal, seleccionar: <strong>Organización de eventos</strong>.<br><br>
+
+3. Completar los datos solicitados:<br>
+• Nombres y apellidos.<br>
+• Correo electrónico (para validar el envío).<br>
+• Número de celular.<br>
+• Información del evento (nombre, fecha, horario, etc.).<br><br>
+
+4. Completar la tabla según el tipo de asistente:<br>
+• Correo electrónico (para validar el envío).<br>
+• Participantes.<br>
+• Staff.<br>
+• Proveedores (adjuntar el SCTR vigente).<br>
+• Catering.
+</div>
+
+<div class="alert">
+<strong>Importante:</strong> Registrar la información hasta un día antes del evento (5:00 p.m.).
+</div>
+
+<h3>Importancia del registro</h3>
+
+<ul>
+<li>Acceso sin inconvenientes</li>
+<li>Validación de estacionamientos</li>
+<li>Cumplimiento de protocolos de seguridad</li>
+</ul>
+
+<p style="text-align:center;"><strong>
+Descarga el reglamento del recinto y revisa el video instructivo.
+</strong></p>
+
+<div class="buttons">
+<a href="https://drive.google.com/file/d/1NnYvKMiPARQjJt6pJlsdVJsYvDhfSFW-/view" target="_blank" class="btn btn-dark">Ver Reglamento</a>
+<a href="https://drive.google.com/file/d/1iyt90utRYwuWV_-PLjafQryQkGVlmy8A/view" target="_blank" class="btn btn-dark">Ver Video</a>
+</div>
+
+<p style="text-align:center; margin-top:25px; font-weight:bold;">
+Si ya completó el registro, puede omitir este mensaje.
+</p>
+
+<div class="final-icons" style="text-align:center;">
+<img src="https://lh3.googleusercontent.com/d/1uSMQAWKKQJYIcpZYXnUDhIcGXT8JBQl1" width="170">
+</div>
+
+</div>
+
+<div class="footer">
+<img src="https://lh3.googleusercontent.com/d/1iy0ZZ21HvcLxMpv7JNr95ncBekoLZWt_">
+
+<div class="footer-text">Soporte de Eventos</div>
+
+<div class="footer-text">
+<a href="https://www.nos.pucp.edu.pe/" target="_blank" class="footer-link">
+Síguenos: nos.pucp.edu.pe
+</a>
+</div>
+
+<div class="footer-text">
+<a href="https://www.instagram.com/nospucp/" target="_blank" class="social-inline">
+Síguenos en:
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+  <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+</svg>
+@nospucp
+</a>
+</div>
+
+</div>
+
+</div>
+
+<script>
+document.querySelectorAll('.btn').forEach(btn=>{
+btn.addEventListener('click',function(e){
+let circle=document.createElement("span");
+let d=Math.max(this.clientWidth,this.clientHeight);
+let r=d/2;
+circle.style.width=circle.style.height=d+"px";
+circle.style.left=(e.clientX-this.getBoundingClientRect().left-r)+"px";
+circle.style.top=(e.clientY-this.getBoundingClientRect().top-r)+"px";
+circle.classList.add("ripple");
+let ripple=this.querySelector(".ripple");
+if(ripple) ripple.remove();
+this.appendChild(circle);
+});
+});
+</script>
+
+</body>
+</html>
